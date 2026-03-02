@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Document</title>
+    <script src="NameValidation.js"></script>
+    <script src ="EmailValidation.js"></script>
+    <script src ="GenderValidation.js"></script>
+    <script src ="DOBValidation.js"></script>
+    <script src ="DegreeValidation.js"></script>
+    <script src ="BloodGroupValidation.js"></script>
+    <script src ="UserValidation.js"></script>
+</head>
+<body>
+    <h3>OBJECTIVES</h3>
+    <p>This assessment item is designed to give you a practice on using HTML form controls </p>
+
+    <h3>ASSESSMENT TASK </h3>
+    <p>Design the following HTML pages <font color="RED">(Each one in separate pages) </font> </p>
+    <h4>1. Name</h4>
+
+<form onsubmit="return checkName()">
+  
+  <input type="text" name="name" id="name"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
+
+<h4>2. Email</h4>
+
+<form onsubmit="return checkEmail()">
+  Email <br><br>
+  <input type="email" name="email" id="email"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<h4><b>3.</b></h4>
+<form onsubmit="return checkGender()"> 
+  <fieldset>
+    <legend>Gender</legend>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other
+  </fieldset>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+  <hr>
+
+<p><b>4.</b></p>
+
+<form onsubmit="return checkDOB()">
+  <fieldset>
+    <legend>Date of Birth</legend>
+    <input type="text" id="dd" size="2"> 
+    <input type="text" id="mm" size="2"> 
+    <input type="text" id="yyyy" size="4">
+  </fieldset>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><b>5.</b></p>
+
+<form onsubmit="return checkDegree()">
+
+  <fieldset >
+    <legend>Degree</legend>
+        <input type="checkbox" name="degree"> SSC
+        <input type="checkbox" name="degree"> HSC
+        <input type="checkbox" name="degree"> BSc
+  </fieldset>
+   
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<p><b>6.</b></p>
+
+<form onsubmit="return checkBloodGroup()">
+  Blood Group
+  <select name="blood" id="blood">
+    <option value=""></option>
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>AB+</option>
+    <option>AB-</option>
+    <option>O+</option>
+    <option>O-</option>
+  </select>
+
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><b>7.</b></p>
+
+<form onsubmit="return checkUser()">
+
+    
+  <fieldset >
+    <legend> Picture</legend>
+
+        User Id
+        <input type="text" name="userid" id="userid"><br><br>
+
+        Picture
+        <input type="file" name="picture" id="picture"><br><br>
+
+        <hr>
+
+        <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<hr>
+
+<form>
+  <p><b>8.</b></p>
+  <table border="1" width="30%">
+    <tr>
+      <td colspan ="3" align="center"><p>Person Profile</p></td>
+    </tr>
+
+    <tr>
+        <td width="150">Name</td>
+        <td width="350">
+            <input type="text" name="name" size="40">
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>
+            <input type="email" name="email" size="40">
+        </td>
+        
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </td>
+    </tr>
+
+     <tr>
+        <td>Date of Birth</td>
+        <td>
+            <input type="text" size="2"> /
+            <input type="text" size="2"> /
+            <input type="text" size="4">
+            (dd/mm/yyyy)
+        </td>
+     </tr>
+
+     <tr>
+        <td>Blood Group</td>
+        <td>
+            <select>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+        </td>
+     </tr>
+
+     <tr>
+        <td>Degree</td>
+        <td>
+            <input type="checkbox"> SSC
+            <input type="checkbox"> HSC
+            <input type="checkbox"> BSc.
+            <input type="checkbox"> MSc.
+        </td>
+     </tr>
+
+     <tr>
+        <td>Photo</td>
+        <td>
+            <input type="file">
+        </td>
+     </tr>
+
+     <tr>
+        <td colspan="3" align="right">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>

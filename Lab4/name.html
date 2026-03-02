@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Name </title>
+    </head>
+ 
+    <body>
+        <h2>Name</h2>
+        <form onsubmit="return validName()">
+            <input type="text" id="name">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+ 
+        <script>
+            function validName(){
+                let name=document.getElementById("name").value.trim();
+                let regex= /^[A-Za-z][A-Za-z.\-]*(\s+[A-Za-z.\-]+)+$/;
+                if (name==="")
+            {
+                alert("name cannot be emty");
+                return false;
+            }
+            if(!regex.test(name))
+            {
+                alert("enter a valid name");
+                return false;
+            }
+            return true;
+            }
+        </script>
+    </body>
